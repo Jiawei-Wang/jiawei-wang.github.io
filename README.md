@@ -1,29 +1,12 @@
-# Rsbuild Project
+## Module Federation with Rsbuild
 
-## Setup
+this is the platform repo
 
-Install the dependencies:
+`yarn install` to install `node_modules`
 
-```bash
-pnpm install
-```
+`yarn build` to get `dist`
 
-## Get Started
+`yarn start` to get `localhost`
 
-Start the dev server:
 
-```bash
-pnpm dev
-```
 
-Build the app for production:
-
-```bash
-pnpm build
-```
-
-Preview the production build locally:
-
-```bash
-pnpm preview
-```
