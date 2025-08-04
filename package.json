@@ -2,6 +2,7 @@
   "name": "platform",
   "private": true,
   "version": "1.0.0",
+  "homepage": "https://jiawei-wang.github.io/",
   "scripts": {
     "dev": "rsbuild dev --open",
     "build": "rsbuild build",
