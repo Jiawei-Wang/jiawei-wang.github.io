@@ -5,6 +5,7 @@
   "scripts": {
     "dev": "rsbuild dev --open",
     "build": "rsbuild build",
+    "start": "rsbuild dev --port 3000",
     "preview": "rsbuild preview"
   },
   "dependencies": {
