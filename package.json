@@ -6,7 +6,8 @@
     "dev": "rsbuild dev --open",
     "build": "rsbuild build",
     "start": "rsbuild dev --port 3000",
-    "preview": "rsbuild preview"
+    "preview": "rsbuild preview",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "react": "^18.3.1",
@@ -19,6 +20,7 @@
     "@types/json-schema": "^7.0.15",
     "@types/react": "^18.3.11",
     "@types/react-dom": "~18.3.1",
+    "gh-pages": "^6.3.0",
     "typescript": "^5.7.2"
   }
 }
