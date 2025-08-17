@@ -9,7 +9,7 @@
       "buildName": "platform"
     },
     "remoteEntry": {
-      "name": "static/js/platform.d5c1761e.js",
+      "name": "static/js/platform.b7060ff5.js",
       "path": "",
       "type": "global"
     },
@@ -81,7 +81,7 @@
       "assets": {
         "js": {
           "sync": [
-            "static/js/async/__federation_expose_default_export.1ce3b5a0.js"
+            "static/js/async/__federation_expose_default_export.9ebaf76d.js"
           ],
           "async": []
         },
