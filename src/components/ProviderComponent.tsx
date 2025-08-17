@@ -4,17 +4,7 @@ import './ProviderComponent.css';
 
 // Import images
 import meImg from '../images/me.jpg';
-import deepSeaImg from '../images/the-deep-sea.png';
-import sizeOfSpaceImg from '../images/the-size-of-space.png';
-import spendImg from '../images/spend-bill-gates-money.png';
-import justForFunImg from '../images/just-for-fun.png';
-import everySecondImg from '../images/every-second.png';
-
-// Import logos
-import fastCompanyLogo from '../images/fast-company.svg';
-import nytLogo from '../images/new-york-times.svg';
-import nextWebLogo from '../images/the-next-web.svg';
-import businessInsiderLogo from '../images/business-insider.svg';
+// import deepSeaImg from '../images/the-deep-sea.png';
 
 // Import contact icons
 import twitterIcon from '../images/twitter.svg';
@@ -38,56 +28,14 @@ const Provider: React.FC = () => {
       <div className="Section">
         <h2 className="SectionHeader">Some things I made</h2>
 
-        <a href="https://neal.fun/deep-sea/" target="_blank" rel="noopener" className="ProjectWrapper">
+        {/* example */}
+        {/* <a href="https://neal.fun/deep-sea/" target="_blank" rel="noopener" className="ProjectWrapper">
           <img alt="The Deep Sea" src={deepSeaImg} className="ProjectThumbnail" />
           <div className="ProjectInfo">
             <div className="ProjectTitle">The Deep Sea</div>
             <div className="ProjectDesc">A page that lets you scroll down the ocean</div>
           </div>
-        </a>
-
-        <a href="https://neal.fun/size-of-space/" target="_blank" rel="noopener" className="ProjectWrapper">
-          <img alt="The Size of Space" src={sizeOfSpaceImg} className="ProjectThumbnail" />
-          <div className="ProjectInfo">
-            <div className="ProjectTitle">The Size of Space</div>
-            <div className="ProjectDesc">A 3D visualization of the scale of the cosmos</div>
-          </div>
-        </a>
-
-        <a href="https://neal.fun/spend/" target="_blank" rel="noopener" className="ProjectWrapper">
-          <img alt="Spend Bill Gates' Money" src={spendImg} className="ProjectThumbnail" />
-          <div className="ProjectInfo">
-            <div className="ProjectTitle">Spend Bill Gates' Money</div>
-            <div className="ProjectDesc">A billionaire simulator</div>
-          </div>
-        </a>
-
-        <a href="https://justforfun.io/" target="_blank" rel="noopener" className="ProjectWrapper">
-          <img alt="Just For Fun" src={justForFunImg} className="ProjectThumbnail" />
-          <div className="ProjectInfo">
-            <div className="ProjectTitle">Just For Fun</div>
-            <div className="ProjectDesc">A curated list of creative coding projects</div>
-          </div>
-        </a>
-
-        <a href="https://everysecond.io/" target="_blank" rel="noopener" className="ProjectWrapper">
-          <img alt="Every Second" src={everySecondImg} className="ProjectThumbnail" />
-          <div className="ProjectInfo">
-            <div className="ProjectTitle">Every Second</div>
-            <div className="ProjectDesc">Visualizing things that happen every second</div>
-          </div>
-        </a>
-      </div>
-
-      {/* Logos */}
-      <div className="Section">
-        <div className="LogoHeader">My projects have been mentioned in:</div>
-        <div className="Logos">
-          <img alt="Fast Company Logo" src={fastCompanyLogo} className="LogoImage" />
-          <img alt="New York Times Logo" src={nytLogo} className="LogoImage" />
-          <img alt="The Next Web Logo" src={nextWebLogo} className="LogoImage" />
-          <img alt="Business Insider Logo" src={businessInsiderLogo} className="LogoImage" />
-        </div>
+        </a> */}
       </div>
 
       {/* Contact */}

@@ -10,6 +10,6 @@ export default defineConfig({
   },
   plugins: [pluginReact(), pluginModuleFederation(moduleFederationConfig)],
   server: {
-    port: 3001,
+    port: 3000,
   },
 });
