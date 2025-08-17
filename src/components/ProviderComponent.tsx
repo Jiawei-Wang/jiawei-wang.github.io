@@ -28,9 +28,9 @@ const Provider: React.FC = () => {
         <div className="HeaderImageWrapper">
           <img alt="Image of Neal" src={meImg} className="HeaderImage" />
         </div>
-        <h1 className="HeaderTitle">Hi, I'm Neal!</h1>
+        <h1 className="HeaderTitle">Hi, I'm Jiawei!</h1>
         <div className="Tagline">
-          I'm a developer with a passion for creative coding. I love pushing the limits of the web and creating fun digital experiences.
+          I'm an enterprise software engineer with focus on ML/Data/Backend, and this is my Github Page. Chica is my rescue dog and pair programmer.
         </div>
       </div>
 
