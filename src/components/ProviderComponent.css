@@ -174,8 +174,8 @@
   background: linear-gradient(150deg, #0A66C2 0%, #004182 100%);
 }
 
-/* Github Issue gradient */
-.ButtonLink.issue {
+/* Mail gradient */
+.ButtonLink.mail {
   background: linear-gradient(150deg, #fc5b78 50%, #fc5bae);
 }
 

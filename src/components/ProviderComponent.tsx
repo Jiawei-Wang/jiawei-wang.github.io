@@ -8,7 +8,8 @@ import underConstruction from "../images/under-construction.png";
 
 // Import contact icons
 import linkedinIcon from "../images/linkedin.png";
-import githubIssueIcon from "../images/github.svg";
+import mailIcon from "../images/mail.svg";
+// import githubIssueIcon from "../images/github.svg";
 
 const Provider: React.FC = () => {
   return (
@@ -120,15 +121,15 @@ const Provider: React.FC = () => {
           <a
             target="_blank"
             rel="noopener"
-            href="https://github.com/Jiawei-Wang/jiawei-wang.github.io/issues/new"
-            className="ButtonLink issue"
+            href="mailto:hire.jiawei@gmail.com"
+            className="ButtonLink mail"
           >
             <img
-              alt="Issue Icon"
-              src={githubIssueIcon}
+              alt="Mail Icon"
+              src={mailIcon}
               className="ButtonIcon"
             />{" "}
-            Github Issue
+            Email
           </a>
         </div>
       </div>
