@@ -179,6 +179,34 @@
   background: linear-gradient(150deg, #fc5b78 50%, #fc5bae);
 }
 
+/* GitHub gradient */
+.ButtonLink.github {
+  background: linear-gradient(150deg, #333333 0%, #24292e 100%);
+}
+
+/* nothing button gradient */
+.ButtonLink.nothing {
+  background: linear-gradient(150deg, #34d399 0%, #059669 100%);
+  position: relative;
+  overflow: hidden;
+}
+.ButtonLink.nothing .plusOne {
+  position: absolute;
+  top: 5px;     /* distance from top */
+  right: 10px;  /* distance from right */
+  color: red;
+  font-weight: bold;
+  font-size: 16px;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.6s ease;
+  transform: translateY(0); /* start position */
+}
+.ButtonLink.nothing .plusOne.show {
+  opacity: 1;
+  transform: translateY(-15px); /* floats up */
+}
+
 /* Responsive tweaks */
 @media screen and (max-width: 450px) {
   .GetInTouch {

@@ -1,5 +1,6 @@
 // ProviderComponent.tsx
 import React from "react";
+import { useRef } from "react";
 import "./ProviderComponent.css";
 
 // Import images
@@ -9,9 +10,22 @@ import underConstruction from "../images/under-construction.png";
 // Import contact icons
 import linkedinIcon from "../images/linkedin.png";
 import mailIcon from "../images/mail.svg";
-// import githubIssueIcon from "../images/github.svg";
+import githubIcon from "../images/github.svg";
 
 const Provider: React.FC = () => {
+  const plusOneRef = useRef<HTMLSpanElement>(null);
+
+  const handleClick = (e: React.MouseEvent<HTMLAnchorElement>) => {
+    e.preventDefault();
+    if (!plusOneRef.current) return;
+
+    plusOneRef.current.classList.add("show");
+
+    setTimeout(() => {
+      plusOneRef.current?.classList.remove("show");
+    }, 600);
+  };
+
   return (
     <div className="pages">
       {/* Header */}
@@ -130,6 +144,23 @@ const Provider: React.FC = () => {
               className="ButtonIcon"
             />{" "}
             Email
+          </a>
+          <a
+            target="_blank"
+            rel="noopener"
+            href="https://github.com/Jiawei-Wang/jiawei-wang.github.io/issues/new"
+            className="ButtonLink github"
+          >
+            <img
+              alt="Github Icon"
+              src={githubIcon}
+              className="ButtonIcon"
+            />{" "}
+            create Github Issue
+          </a>
+          <a className="ButtonLink nothing" onClick={handleClick}>
+            Don't click this button
+            <span ref={plusOneRef} className="plusOne">+1</span>
           </a>
         </div>
       </div>
