@@ -1,52 +1,257 @@
-.container {
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700&display=swap');
+
+.pages {
+  background-color: #ffffff;
+  font-family: 'Source Sans Pro', sans-serif;
+  color: #212121;
+}
+
+/* Header */
+.Header {
+  text-align: center;
+  padding: 100px 25px 15px 25px;
+}
+
+.HeaderImageWrapper {
+  width: 150px;
+  height: 150px;
+  margin: 0 auto;
+  border-radius: 100%;
+  background: linear-gradient(-45deg, #ff4fb3, #a14fff, #4fb6ff, #4ffff3);
+  background-size: 400% 400%;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 100vh;
-  background: linear-gradient(45deg, #3a65f2, #6a5acd, #8a2be2, #023cfc);
-  background-size: 400% 400%;
-  animation: gradientFlow 6s ease infinite;
+  animation: gradient 5s ease infinite alternate-reverse;
 }
 
-.icon-container {
-  width: 180px;
-  margin-bottom: 20px;
-  position: relative;
-  transition: all 0.3s ease;
+@keyframes gradient {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
 }
 
-.logo-image {
+.HeaderImage {
+  max-width: 140px;
+  max-height: 140px;
+  border-radius: 100%;
+}
+
+.HeaderTitle {
+  font-size: 56px;
+  margin: 10px 0 20px 0;
+}
+
+.Tagline {
+  font-size: 24px;
+  max-width: 775px;
+  margin: 0 auto 0 auto;
+  line-height: 1.6em;
+  text-align: left;
+  padding-left: 0;
+}
+
+/* Sections */
+.Section {
+  max-width: 775px;
+  margin: 25px auto;
+  padding-bottom: 40px;
+}
+
+.SectionHeader {
+  font-size: 24px;
+  font-weight: bold;
+  margin: 0 0 10px 0;
+  text-align: left;       
+  max-width: 775px;       
+  margin-left: auto;      
+  margin-right: auto;     
+  padding-left: 0;    
+  padding-right: 0;    
+}
+
+/* Projects */
+.ProjectWrapper {
   width: 100%;
-  transition: opacity 0.3s ease;
-}
-
-.title {
-  font-size: 3rem;
-  color: #fff;
+  display: grid;
+  grid-template-columns: 280px 1fr;
   margin-bottom: 20px;
-  animation: fadeInUp 1s ease-out;
+  box-shadow: 0px 6px 10px 5px rgba(0,0,0,0.065);
+  border-radius: 5px;
+  text-decoration: none;
+  color: #212121;
+  transition: box-shadow 0.2s ease;
 }
 
-@keyframes gradientFlow {
-  0% {
-    background-position: 0% 50%;
+.ProjectWrapper:hover {
+  box-shadow: 0px 6px 10px 5px rgba(0,0,0,0.1);
+  position: relative;
+  bottom: 2px;
+}
+
+.ProjectThumbnail {
+  width: 100%;
+  height: 165px;
+  object-fit: cover;
+  border-radius: 5px 0 0 5px;
+}
+
+.ProjectInfo {
+  max-width: 400px;
+  margin-left: 30px;
+  align-self: center;
+  padding: 20px;
+}
+
+.ProjectTitle {
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  line-height: 1.2em;
+  cursor: pointer;
+}
+
+.ProjectDesc {
+  font-size: 18px;
+  line-height: 1.4em;
+}
+
+/* Logos */
+.LogoHeader {
+  font-size: 24px;
+  text-align: center;
+  margin-bottom: 0px;
+}
+
+.Logos {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.LogoImage {
+  margin-right: 30px;
+  height: 30px;
+  vertical-align: middle;
+  opacity: 0.8;
+  filter: saturate(0%) brightness(70%) contrast(1000%);
+}
+
+/* Contact / Buttons */
+.GetInTouch {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  margin-top: 20px;
+  max-width: 775px; /* align with projects */
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.ButtonLink {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 28px;
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+  border-radius: 5px;
+  height: 80px;
+  width: 100%;
+}
+
+.ButtonIcon {
+  height: 20px;
+  margin-right: 8px;
+}
+
+/* Twitter gradient */
+.ButtonLink.twitter {
+  background: linear-gradient(150deg, #00acee 50%, #00c6ee);
+}
+
+/* Email gradient */
+.ButtonLink.email {
+  background: linear-gradient(150deg, #fc5b78 50%, #fc5bae);
+}
+
+/* Responsive tweaks */
+@media screen and (max-width: 450px) {
+  .GetInTouch {
+    grid-template-columns: 1fr;
+    gap: 10px;
   }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
+  .ButtonLink {
+    font-size: 24px;
+    height: 60px;
   }
 }
 
-@keyframes fadeInUp {
-  from {
-    opacity: 0;
-    transform: translateY(20px);
+@media screen and (max-width: 900px) {
+  .LogoImage {
+    margin-bottom: 20px;
   }
-  to {
-    opacity: 1;
-    transform: translateY(0);
+}
+
+@media screen and (max-width: 750px) {
+  .ProjectWrapper {
+    grid-template-columns: 230px 1fr;
+  }
+  .ProjectInfo {
+    margin-left: 10px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .ProjectWrapper {
+    grid-template-columns: 1fr;
+    margin-bottom: 25px;
+  }
+  .ProjectInfo {
+    margin-left: 0;
+    padding: 20px 30px 25px 30px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .HeaderTitle {
+    font-size: 42px;
+  }
+  .HeaderImageWrapper {
+    width: 130px;
+    height: 130px;
+  }
+  .HeaderImage {
+    max-width: 120px;
+    max-height: 120px;
+  }
+  .Tagline {
+    font-size: 22px;
+  }
+  .SectionHeader {
+    font-size: 22px;
+  }
+  .LogoImage {
+    margin-left: 10px;
+    margin-right: 10px;
+    height: 25px;
+    opacity: 0.65;
+  }
+  .GetInTouch {
+    grid-gap: 10px;
+  }
+  .ButtonLink {
+    font-size: 24px;
+    height: 60px;
+  }
+  .ProjectThumbnail {
+    height: 165px;
+    border-radius: 5px 5px 0 0;
+  }
+  .ProjectTitle {
+    font-size: 24px;
+    margin-bottom: 7px;
   }
 }
