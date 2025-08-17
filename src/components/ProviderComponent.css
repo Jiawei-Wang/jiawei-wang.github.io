@@ -163,17 +163,19 @@
 }
 
 .ButtonIcon {
-  height: 20px;
+  height: 1em;
+  width: auto;
   margin-right: 8px;
+  vertical-align: middle;
 }
 
-/* Twitter gradient */
-.ButtonLink.twitter {
-  background: linear-gradient(150deg, #00acee 50%, #00c6ee);
+/* LinkedIn gradient */
+.ButtonLink.linkedin {
+  background: linear-gradient(150deg, #0A66C2 0%, #004182 100%);
 }
 
-/* Email gradient */
-.ButtonLink.email {
+/* Github Issue gradient */
+.ButtonLink.issue {
   background: linear-gradient(150deg, #fc5b78 50%, #fc5bae);
 }
 
