@@ -1,6 +1,5 @@
 // ProviderComponent.tsx
 import React from "react";
-import { useRef } from "react";
 import "./ProviderComponent.css";
 
 // Import images
@@ -14,19 +13,6 @@ import githubIcon from "../images/github.svg";
 import insIcon from "../images/instagram.svg"
 
 const Provider: React.FC = () => {
-  const plusOneRef = useRef<HTMLSpanElement>(null);
-
-  const handleClick = (e: React.MouseEvent<HTMLAnchorElement>) => {
-    e.preventDefault();
-    if (!plusOneRef.current) return;
-
-    plusOneRef.current.classList.add("show");
-
-    setTimeout(() => {
-      plusOneRef.current?.classList.remove("show");
-    }, 600);
-  };
-
   return (
     <div className="pages">
       {/* Header */}
@@ -120,10 +106,6 @@ const Provider: React.FC = () => {
               className="ButtonIcon"
             />{" "}
             Instagram
-          </a>
-          <a className="ButtonLink nothing" onClick={handleClick}>
-            Don't click this button
-            <span ref={plusOneRef} className="plusOne">+1</span>
           </a>
         </div>
       </div>

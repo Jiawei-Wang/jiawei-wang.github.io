@@ -79,7 +79,7 @@
   grid-template-columns: 280px 1fr;
   margin-bottom: 20px;
   box-shadow: 0px 6px 10px 5px rgba(0,0,0,0.065);
-  border-radius: 5px;
+  border-radius: 15px;
   text-decoration: none;
   color: #212121;
   transition: box-shadow 0.2s ease;
@@ -95,7 +95,7 @@
   width: 100%;
   height: 165px;
   object-fit: cover;
-  border-radius: 5px 0 0 5px;
+  border-radius: 15px 0 0 15px;
 }
 
 .ProjectInfo {
@@ -138,13 +138,13 @@
   filter: saturate(0%) brightness(70%) contrast(1000%);
 }
 
-/* Contact / Buttons */
+/* Contact buttons */
 .GetInTouch {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 20px;
   margin-top: 20px;
-  max-width: 775px; /* align with projects */
+  max-width: 775px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -158,9 +158,16 @@
   color: white;
   text-decoration: none;
   cursor: pointer;
-  border-radius: 5px;
+  border-radius: 15px;
   height: 80px;
   width: 100%;
+  box-shadow: 0px 6px 10px 5px rgba(0,0,0,0.065);
+  transition: box-shadow 0.2s ease, transform 0.2s ease;
+}
+
+.ButtonLink:hover {
+  box-shadow: 0px 6px 10px 5px rgba(0,0,0,0.1);
+  transform: translateY(-2px);
 }
 
 .ButtonIcon {
@@ -177,7 +184,7 @@
 
 /* Mail gradient */
 .ButtonLink.mail {
-  background: linear-gradient(150deg, #d93025 0%, #b71c1c 100%);
+  background: linear-gradient(150deg, #2bb180 0%, #069366 100%);
 }
 
 /* GitHub gradient */
@@ -190,48 +197,7 @@
   background: linear-gradient(150deg, #feda75 0%, #fa7e1e 25%, #d62976 50%, #962fbf 75%, #4f5bd5 100%);
 }
 
-/* nothing button gradient */
-.ButtonLink.nothing {
-  background: linear-gradient(150deg, #34d399 0%, #059669 100%);
-  position: relative;
-  overflow: hidden;
-}
-.ButtonLink.nothing .plusOne {
-  position: absolute;
-  top: 5px;     /* distance from top */
-  right: 10px;  /* distance from right */
-  color: red;
-  font-weight: bold;
-  font-size: 16px;
-  opacity: 0;
-  pointer-events: none;
-  transition: all 0.6s ease;
-  transform: translateY(0); /* start position */
-}
-.ButtonLink.nothing .plusOne.show {
-  opacity: 1;
-  transform: translateY(-15px); /* floats up */
-}
-
 /* Responsive tweaks */
-@media screen and (max-width: 450px) {
-  .Section, .SectionHeader, .Tagline, .LogoHeader {
-    padding-left: 15px;
-    padding-right: 15px;
-  }
-  .GetInTouch {
-    grid-template-columns: 1fr;
-    gap: 10px;
-    padding-left: 10px;
-    padding-right: 10px;
-  }
-  .ButtonLink {
-    font-size: 24px;
-    height: 60px;
-    width: 100%; /* ensures it fills the grid column */
-  }
-}
-
 @media screen and (max-width: 900px) {
   .LogoImage {
     margin-bottom: 20px;
@@ -259,40 +225,59 @@
 }
 
 @media screen and (max-width: 450px) {
+  .Section, .SectionHeader, .Tagline, .LogoHeader {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .GetInTouch {
+    grid-template-columns: 1fr;
+    gap: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    grid-gap: 10px;
+  }
+
+  .ButtonLink {
+    font-size: 24px;
+    height: 60px;
+    width: 100%;
+  }
+
   .HeaderTitle {
     font-size: 42px;
   }
+
   .HeaderImageWrapper {
     width: 130px;
     height: 130px;
   }
+
   .HeaderImage {
     max-width: 120px;
     max-height: 120px;
   }
+
   .Tagline {
     font-size: 22px;
   }
+
   .SectionHeader {
     font-size: 22px;
   }
+
   .LogoImage {
     margin-left: 10px;
     margin-right: 10px;
     height: 25px;
     opacity: 0.65;
   }
-  .GetInTouch {
-    grid-gap: 10px;
-  }
-  .ButtonLink {
-    font-size: 24px;
-    height: 60px;
-  }
+
   .ProjectThumbnail {
     height: 165px;
-    border-radius: 5px 5px 0 0;
+    border-radius: 15px 15px 0 0;
   }
+
   .ProjectTitle {
     font-size: 24px;
     margin-bottom: 7px;
