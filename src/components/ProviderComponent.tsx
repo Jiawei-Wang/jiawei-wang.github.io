@@ -60,57 +60,6 @@ const Provider: React.FC = () => {
             <div className="ProjectDesc">A page that lets you foo the bar</div>
           </div>
         </a>
-
-        <a
-          href="https://www.youtube.com/watch?v=dQw4w9WgXcQ/"
-          target="_blank"
-          rel="noopener"
-          className="ProjectWrapper"
-        >
-          <img
-            alt="The Deep Sea"
-            src={underConstruction}
-            className="ProjectThumbnail"
-          />
-          <div className="ProjectInfo">
-            <div className="ProjectTitle">The Foo Bar</div>
-            <div className="ProjectDesc">A page that lets you foo the bar</div>
-          </div>
-        </a>
-
-        <a
-          href="https://www.youtube.com/watch?v=dQw4w9WgXcQ/"
-          target="_blank"
-          rel="noopener"
-          className="ProjectWrapper"
-        >
-          <img
-            alt="The Deep Sea"
-            src={underConstruction}
-            className="ProjectThumbnail"
-          />
-          <div className="ProjectInfo">
-            <div className="ProjectTitle">The Foo Bar</div>
-            <div className="ProjectDesc">A page that lets you foo the bar</div>
-          </div>
-        </a>
-
-        <a
-          href="https://www.youtube.com/watch?v=dQw4w9WgXcQ/"
-          target="_blank"
-          rel="noopener"
-          className="ProjectWrapper"
-        >
-          <img
-            alt="The Deep Sea"
-            src={underConstruction}
-            className="ProjectThumbnail"
-          />
-          <div className="ProjectInfo">
-            <div className="ProjectTitle">The Foo Bar</div>
-            <div className="ProjectDesc">A page that lets you foo the bar</div>
-          </div>
-        </a>
       </div>
 
       {/* Contact */}

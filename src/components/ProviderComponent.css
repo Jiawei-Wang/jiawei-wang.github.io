@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700&display=swap');
 
 .pages {
+  min-height: 100vh;
   background-color: #ffffff;
   font-family: 'Source Sans Pro', sans-serif;
   color: #212121;
@@ -212,10 +213,13 @@
   .GetInTouch {
     grid-template-columns: 1fr;
     gap: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
   }
   .ButtonLink {
     font-size: 24px;
     height: 60px;
+    width: 100%; /* ensures it fills the grid column */
   }
 }
 
