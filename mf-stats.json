@@ -9,7 +9,7 @@
       "buildName": "platform"
     },
     "remoteEntry": {
-      "name": "static/js/platform.ebe7fe81.js",
+      "name": "static/js/platform.d2acd75c.js",
       "path": "",
       "type": "global"
     },
@@ -81,13 +81,13 @@
       "assets": {
         "js": {
           "sync": [
-            "static/js/async/__federation_expose_default_export.6d6a6022.js"
+            "static/js/async/__federation_expose_default_export.b9564ea8.js"
           ],
           "async": []
         },
         "css": {
           "sync": [
-            "static/css/async/__federation_expose_default_export.b41552a1.css"
+            "static/css/async/__federation_expose_default_export.18bf6a35.css"
           ],
           "async": []
         }
