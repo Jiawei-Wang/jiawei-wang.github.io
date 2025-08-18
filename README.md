@@ -1,4 +1,6 @@
-## Module Federation with Rsbuild
+## hobby project for my personal Github Page: [link](https://jiawei-wang.github.io/) 
+
+#### Module Federation with Rsbuild
 
 this is the platform repo
 
@@ -8,3 +10,4 @@ this is the platform repo
 
 `yarn start` to start `localhost`
 
+please create a Github Issue if you have any feedback, thx
