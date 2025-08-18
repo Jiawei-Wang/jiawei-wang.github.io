@@ -67,7 +67,9 @@
           "sync": []
         }
       },
-      "usedIn": []
+      "usedIn": [
+        "."
+      ]
     }
   ],
   "remotes": [],
@@ -76,7 +78,9 @@
       "path": ".",
       "id": "platform:.",
       "name": ".",
-      "requires": [],
+      "requires": [
+        "react"
+      ],
       "file": "src/components/ProviderComponent.tsx",
       "assets": {
         "js": {
