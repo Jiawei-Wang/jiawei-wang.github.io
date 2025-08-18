@@ -92,7 +92,7 @@ const Provider: React.FC = () => {
               src={githubIcon}
               className="ButtonIcon"
             />{" "}
-            new Github Issue
+            create Github Issue
           </a>
           <a
             target="_blank"
