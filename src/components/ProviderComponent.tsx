@@ -11,6 +11,7 @@ import underConstruction from "../images/under-construction.png";
 import linkedinIcon from "../images/linkedin.png";
 import mailIcon from "../images/mail.svg";
 import githubIcon from "../images/github.svg";
+import insIcon from "../images/instagram.svg"
 
 const Provider: React.FC = () => {
   const plusOneRef = useRef<HTMLSpanElement>(null);
@@ -105,7 +106,20 @@ const Provider: React.FC = () => {
               src={githubIcon}
               className="ButtonIcon"
             />{" "}
-            create Github Issue
+            new Github Issue
+          </a>
+          <a
+            target="_blank"
+            rel="noopener"
+            href="https://www.instagram.com/real.jiawei.wang/"
+            className="ButtonLink instagram"
+          >
+            <img
+              alt="Instagram Icon"
+              src={insIcon}
+              className="ButtonIcon"
+            />{" "}
+            Instagram
           </a>
           <a className="ButtonLink nothing" onClick={handleClick}>
             Don't click this button
