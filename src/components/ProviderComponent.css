@@ -210,6 +210,10 @@
 
 /* Responsive tweaks */
 @media screen and (max-width: 450px) {
+  .Section, .SectionHeader, .Tagline, .LogoHeader {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
   .GetInTouch {
     grid-template-columns: 1fr;
     gap: 10px;
