@@ -11,7 +11,16 @@ import linkedinIcon from "../images/linkedin.png";
 import mailIcon from "../images/mail.svg";
 import githubIcon from "../images/github.svg";
 
+// Import ToldYaBanner.tsx
+import { useState } from "react";
+import ToldYaBanner from "./ToldYaBanner";
+
 const Provider: React.FC = () => {
+  const [showBanner, setShowBanner] = useState(false);
+  const handleNothingClick = () => {
+    setShowBanner(true);
+  };
+
   return (
     <div className="pages">
       {/* Header */}
@@ -93,15 +102,16 @@ const Provider: React.FC = () => {
             />{" "}
             create Github Issue
           </a>
-          <a
-            target="_blank"
-            rel="noopener"
-            className="ButtonLink nothing"
-          >
-            This button does nothing
-          </a>
+          <button
+  onClick={handleNothingClick}
+  className="ButtonLink nothing"
+>
+  This button does nothing
+</button>
         </div>
       </div>
+            {/* Banner */}
+            <ToldYaBanner trigger={showBanner} onHide={() => setShowBanner(false)} />
     </div>
   );
 };

@@ -195,7 +195,7 @@
 
 /* Mail gradient */
 .ButtonLink.mail {
-  background: linear-gradient(150deg, #2bb180 0%, #069366 100%);
+  background: linear-gradient(150deg, #FF5A5A 0%, #CC0000 100%);
 }
 
 /* GitHub gradient */
@@ -205,7 +205,8 @@
 
 /* Nothing gradient */
 .ButtonLink.nothing {
-  background: linear-gradient(150deg, #FFD84D 0%, #FFB800 100%);
+  background: linear-gradient(150deg, #2bb180 0%, #069366 100%);
+  border: none;       /* get rid of the default black outline */
 }
 
 /* Responsive tweaks */
