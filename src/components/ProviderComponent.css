@@ -19,7 +19,18 @@
   height: 150px;
   margin: 0 auto;
   border-radius: 100%;
-  background: linear-gradient(-45deg, #ff4fb3, #a14fff, #4fb6ff, #4ffff3);
+  background: linear-gradient(
+    -45deg,
+    #ff4fb3,  /* pink */
+    #a14fff,  /* purple */
+    #4b4fff,  /* soft blue */
+    #4ffff3,  /* cyan */
+    #4fff9e,  /* mint green */
+    #a6ff4f,  /* lime green */
+    #fff34f,  /* soft yellow */
+    #ff944f,  /* orange */
+    #ff4f7f   /* coral pink */
+  );
   background-size: 400% 400%;
   display: flex;
   align-items: center;
