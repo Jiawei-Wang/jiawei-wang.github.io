@@ -10,7 +10,6 @@ import underConstruction from "../images/under-construction.png";
 import linkedinIcon from "../images/linkedin.png";
 import mailIcon from "../images/mail.svg";
 import githubIcon from "../images/github.svg";
-import insIcon from "../images/instagram.svg"
 
 const Provider: React.FC = () => {
   return (
@@ -97,15 +96,9 @@ const Provider: React.FC = () => {
           <a
             target="_blank"
             rel="noopener"
-            href="https://www.instagram.com/real.jiawei.wang/"
-            className="ButtonLink instagram"
+            className="ButtonLink nothing"
           >
-            <img
-              alt="Instagram Icon"
-              src={insIcon}
-              className="ButtonIcon"
-            />{" "}
-            Instagram
+            This button does nothing
           </a>
         </div>
       </div>

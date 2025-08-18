@@ -203,9 +203,9 @@
   background: linear-gradient(150deg, #333333 0%, #24292e 100%);
 }
 
-/* Instagram gradient */
-.ButtonLink.instagram {
-  background: linear-gradient(150deg, #feda75 0%, #fa7e1e 25%, #d62976 50%, #962fbf 75%, #4f5bd5 100%);
+/* Nothing gradient */
+.ButtonLink.nothing {
+  background: linear-gradient(150deg, #FFD84D 0%, #FFB800 100%);
 }
 
 /* Responsive tweaks */
