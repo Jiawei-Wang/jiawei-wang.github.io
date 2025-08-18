@@ -9,7 +9,7 @@
       "buildName": "platform"
     },
     "remoteEntry": {
-      "name": "static/js/platform.8573f692.js",
+      "name": "static/js/platform.5b129e4e.js",
       "path": "",
       "type": "global"
     },
@@ -67,7 +67,9 @@
           "sync": []
         }
       },
-      "usedIn": []
+      "usedIn": [
+        "."
+      ]
     }
   ],
   "remotes": [],
@@ -76,18 +78,20 @@
       "path": ".",
       "id": "platform:.",
       "name": ".",
-      "requires": [],
+      "requires": [
+        "react"
+      ],
       "file": "src/components/ProviderComponent.tsx",
       "assets": {
         "js": {
           "sync": [
-            "static/js/async/__federation_expose_default_export.23788ba8.js"
+            "static/js/async/__federation_expose_default_export.c81084b5.js"
           ],
           "async": []
         },
         "css": {
           "sync": [
-            "static/css/async/__federation_expose_default_export.8966f88e.css"
+            "static/css/async/__federation_expose_default_export.c8a72a45.css"
           ],
           "async": []
         }
